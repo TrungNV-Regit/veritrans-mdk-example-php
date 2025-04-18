@@ -46,7 +46,7 @@
                 <div class="col-3 col-sm-3"><img src="{{asset("images/Card_DinersClub.png")}}" alt="DinersClub"></div>
             </div>
             <hr class="mb-4">
-            <form method="post" action="{{ url('/card') }}" class="needs-validation" onclick="return false;"
+            <form method="post" action="{{ url('/api/3ds') }}" class="needs-validation" onclick="return false;"
                   id="token_form" novalidate>
                 @csrf
                 <input type="hidden" id="token_api_key" value="{{ $tokenApiKey }}">

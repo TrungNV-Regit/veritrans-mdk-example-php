@@ -52,7 +52,7 @@ class RakutenController extends Controller
         $request_data->setSuccessUrl($request->request->get("successUrl"));
         $request_data->setErrorUrl($request->request->get("errorUrl"));
         $request_data->setPushUrl($request->request->get("pushUrl"));
-
+        TGMDK_Config::getInstance();
         $transaction = new TGMDK_Transaction();
         $response_data = $transaction->execute($request_data);
 

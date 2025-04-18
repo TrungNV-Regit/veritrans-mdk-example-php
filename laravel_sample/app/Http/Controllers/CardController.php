@@ -49,7 +49,7 @@ class CardController extends Controller
         /*
          * 設定ファイルのパスを手動で指定する場合は以下のようにパスを指定してTGMDK_Configクラスのインスタンス生成をしておく
          */
-        TGMDK_Config::getInstance("C:/Users/User/Downloads/Mdk4G-Sample-php8-2.0.0/veritrans-mdk-sample/local_packages/veritrans-tgmdk/src/tgMdk/3GPSMDK.properties");
+        TGMDK_Config::getInstance();
 
         $transaction = new TGMDK_Transaction();
         $response_data = $transaction->execute($request_data);

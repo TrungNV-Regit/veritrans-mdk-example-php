@@ -47,7 +47,7 @@ if (proceedPaymentButton != null) {
                     document.getElementById('cardholderName').value = "";
                 }
                 document.getElementById('token').value = response.token;
-                document.forms[0].submit();
+                // document.forms[0].submit();
             } else {
                 alert(response.message);
             }
